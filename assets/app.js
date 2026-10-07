@@ -62,7 +62,7 @@
     mn = Math.floor(mn / step) * step; mx = Math.ceil(mx / step) * step;
     const n = g.history.length - 1;
     const x = (i) => L + (i * (W - L - R)) / n, y = (v) => T + ((mx - v) * (H - T - B)) / (mx - mn);
-    const mono = 'font-family="IBM Plex Mono,monospace" font-size="11" fill="var(--muted)"';
+    const mono = 'font-family="Share Tech Mono,monospace" font-size="12" fill="var(--muted)"';
     let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="12 month median sold price for ${esc(g.name)}, Very Good condition">`;
     for (let v = mn; v <= mx; v += step)
       s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--rule)"/><text x="${L - 8}" y="${y(v) + 4}" text-anchor="end" ${mono}>${money(v)}</text>`;
