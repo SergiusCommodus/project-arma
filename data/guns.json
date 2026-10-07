@@ -1,0 +1,1545 @@
+{
+ "meta": {
+  "generated": "2026-10-07T02:57:59+00:00",
+  "as_of": "2026-10-06",
+  "sample": true
+ },
+ "models": [
+  {
+   "id": "m1-garand",
+   "name": "M1 Garand",
+   "detail": "USGI .30-06, Springfield Armory or HRA",
+   "category": "Military surplus",
+   "bands": {
+    "good": {
+     "low": 1020,
+     "median": 1180,
+     "high": 1260,
+     "n": 18
+    },
+    "very_good": {
+     "low": 1380,
+     "median": 1470,
+     "high": 1600,
+     "n": 21
+    },
+    "excellent": {
+     "low": 1870,
+     "median": 1930,
+     "high": 2090,
+     "n": 15
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 62,
+   "confidence": "high",
+   "trend_12m": 0.043,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 1400,
+     "n": 15
+    },
+    {
+     "month": "2025-12",
+     "median": 1370,
+     "n": 24
+    },
+    {
+     "month": "2026-01",
+     "median": 1410,
+     "n": 18
+    },
+    {
+     "month": "2026-02",
+     "median": 1330,
+     "n": 18
+    },
+    {
+     "month": "2026-03",
+     "median": 1380,
+     "n": 16
+    },
+    {
+     "month": "2026-04",
+     "median": 1380,
+     "n": 12
+    },
+    {
+     "month": "2026-05",
+     "median": 1380,
+     "n": 20
+    },
+    {
+     "month": "2026-06",
+     "median": 1520,
+     "n": 26
+    },
+    {
+     "month": "2026-07",
+     "median": 1460,
+     "n": 18
+    },
+    {
+     "month": "2026-08",
+     "median": 1460,
+     "n": 13
+    },
+    {
+     "month": "2026-09",
+     "median": 1500,
+     "n": 22
+    },
+    {
+     "month": "2026-10",
+     "median": 1440,
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "m1-carbine",
+   "name": "M1 Carbine",
+   "detail": "USGI .30 Carbine, Inland or Winchester",
+   "category": "Military surplus",
+   "bands": {
+    "good": {
+     "low": 1230,
+     "median": 1330,
+     "high": 1400,
+     "n": 18
+    },
+    "very_good": {
+     "low": 1460,
+     "median": 1610,
+     "high": 1730,
+     "n": 20
+    },
+    "excellent": {
+     "low": 2110,
+     "median": 2210,
+     "high": 2480,
+     "n": 8
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 52,
+   "confidence": "high",
+   "trend_12m": 0.078,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 1460,
+     "n": 13
+    },
+    {
+     "month": "2025-12",
+     "median": 1580,
+     "n": 18
+    },
+    {
+     "month": "2026-01",
+     "median": 1530,
+     "n": 15
+    },
+    {
+     "month": "2026-02",
+     "median": 1540,
+     "n": 17
+    },
+    {
+     "month": "2026-03",
+     "median": 1610,
+     "n": 13
+    },
+    {
+     "month": "2026-04",
+     "median": 1610,
+     "n": 11
+    },
+    {
+     "month": "2026-05",
+     "median": 1570,
+     "n": 12
+    },
+    {
+     "month": "2026-06",
+     "median": 1650,
+     "n": 14
+    },
+    {
+     "month": "2026-07",
+     "median": 1570,
+     "n": 17
+    },
+    {
+     "month": "2026-08",
+     "median": 1620,
+     "n": 17
+    },
+    {
+     "month": "2026-09",
+     "median": 1660,
+     "n": 13
+    },
+    {
+     "month": "2026-10",
+     "median": 1650,
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "thompson-1927a1",
+   "name": "Thompson 1927A1",
+   "detail": "Auto Ordnance semi auto, .45 ACP",
+   "category": "Rifles",
+   "bands": {
+    "good": {
+     "low": 1140,
+     "median": 1250,
+     "high": 1400,
+     "n": 17
+    },
+    "very_good": {
+     "low": 1530,
+     "median": 1570,
+     "high": 1710,
+     "n": 15
+    },
+    "excellent": {
+     "low": 2060,
+     "median": 2110,
+     "high": 2300,
+     "n": 11
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 49,
+   "confidence": "high",
+   "trend_12m": -0.006,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 1580,
+     "n": 11
+    },
+    {
+     "month": "2025-12",
+     "median": 1520,
+     "n": 10
+    },
+    {
+     "month": "2026-01",
+     "median": 1660,
+     "n": 12
+    },
+    {
+     "month": "2026-02",
+     "median": 1640,
+     "n": 9
+    },
+    {
+     "month": "2026-03",
+     "median": 1370,
+     "n": 8
+    },
+    {
+     "month": "2026-04",
+     "median": 1560,
+     "n": 8
+    },
+    {
+     "month": "2026-05",
+     "median": 1570,
+     "n": 14
+    },
+    {
+     "month": "2026-06",
+     "median": 1500,
+     "n": 10
+    },
+    {
+     "month": "2026-07",
+     "median": 1550,
+     "n": 11
+    },
+    {
+     "month": "2026-08",
+     "median": 1570,
+     "n": 15
+    },
+    {
+     "month": "2026-09",
+     "median": 1650,
+     "n": 15
+    },
+    {
+     "month": "2026-10",
+     "median": 1550,
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "m1911a1",
+   "name": "M1911A1",
+   "detail": "USGI WWII issue, .45 ACP",
+   "category": "Handguns",
+   "bands": {
+    "good": {
+     "low": 2160,
+     "median": 2340,
+     "high": 2700,
+     "n": 9
+    },
+    "very_good": {
+     "low": 2930,
+     "median": 3220,
+     "high": 3640,
+     "n": 14
+    },
+    "excellent": {
+     "low": 4210,
+     "median": 4270,
+     "high": 4510,
+     "n": 8
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 180
+   },
+   "sales_90d": 30,
+   "confidence": "high",
+   "trend_12m": 0.02,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 3120,
+     "n": 8
+    },
+    {
+     "month": "2025-12",
+     "median": 3220,
+     "n": 8
+    },
+    {
+     "month": "2026-01",
+     "median": 3270,
+     "n": 9
+    },
+    {
+     "month": "2026-02",
+     "median": 2930,
+     "n": 4
+    },
+    {
+     "month": "2026-03",
+     "median": 2830,
+     "n": 9
+    },
+    {
+     "month": "2026-04",
+     "median": 3140,
+     "n": 10
+    },
+    {
+     "month": "2026-05",
+     "median": 3330,
+     "n": 7
+    },
+    {
+     "month": "2026-06",
+     "median": 3220,
+     "n": 8
+    },
+    {
+     "month": "2026-07",
+     "median": 3170,
+     "n": 10
+    },
+    {
+     "month": "2026-08",
+     "median": 3490,
+     "n": 9
+    },
+    {
+     "month": "2026-09",
+     "median": 3080,
+     "n": 8
+    },
+    {
+     "month": "2026-10",
+     "median": null,
+     "n": 0
+    }
+   ]
+  },
+  {
+   "id": "colt-saa",
+   "name": "Colt Single Action Army",
+   "detail": "Third generation, .45 Colt",
+   "category": "Revolvers",
+   "bands": {
+    "good": {
+     "low": 1770,
+     "median": 1890,
+     "high": 2030,
+     "n": 8
+    },
+    "very_good": {
+     "low": 2170,
+     "median": 2370,
+     "high": 2580,
+     "n": 14
+    },
+    "excellent": {
+     "low": 3250,
+     "median": 3360,
+     "high": 3770,
+     "n": 13
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 180
+   },
+   "sales_90d": 28,
+   "confidence": "medium",
+   "trend_12m": -0.011,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 2440,
+     "n": 9
+    },
+    {
+     "month": "2025-12",
+     "median": 2350,
+     "n": 11
+    },
+    {
+     "month": "2026-01",
+     "median": 2170,
+     "n": 8
+    },
+    {
+     "month": "2026-02",
+     "median": 2270,
+     "n": 12
+    },
+    {
+     "month": "2026-03",
+     "median": 2380,
+     "n": 14
+    },
+    {
+     "month": "2026-04",
+     "median": 2370,
+     "n": 9
+    },
+    {
+     "month": "2026-05",
+     "median": 2280,
+     "n": 7
+    },
+    {
+     "month": "2026-06",
+     "median": 2530,
+     "n": 10
+    },
+    {
+     "month": "2026-07",
+     "median": 2470,
+     "n": 6
+    },
+    {
+     "month": "2026-08",
+     "median": 2360,
+     "n": 10
+    },
+    {
+     "month": "2026-09",
+     "median": 2290,
+     "n": 8
+    },
+    {
+     "month": "2026-10",
+     "median": null,
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "winchester-1873",
+   "name": "Winchester 1873",
+   "detail": "Miroku made, .45 Colt or .357",
+   "category": "Rifles",
+   "bands": {
+    "good": {
+     "low": 1000,
+     "median": 1050,
+     "high": 1190,
+     "n": 8
+    },
+    "very_good": {
+     "low": 1390,
+     "median": 1440,
+     "high": 1590,
+     "n": 16
+    },
+    "excellent": {
+     "low": 1750,
+     "median": 1860,
+     "high": 2100,
+     "n": 19
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 365
+   },
+   "sales_90d": 26,
+   "confidence": "medium",
+   "trend_12m": 0.014,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 1580,
+     "n": 5
+    },
+    {
+     "month": "2025-12",
+     "median": 1470,
+     "n": 8
+    },
+    {
+     "month": "2026-01",
+     "median": 1450,
+     "n": 9
+    },
+    {
+     "month": "2026-02",
+     "median": 1420,
+     "n": 7
+    },
+    {
+     "month": "2026-03",
+     "median": 1500,
+     "n": 10
+    },
+    {
+     "month": "2026-04",
+     "median": 1560,
+     "n": 11
+    },
+    {
+     "month": "2026-05",
+     "median": 1440,
+     "n": 11
+    },
+    {
+     "month": "2026-06",
+     "median": 1340,
+     "n": 8
+    },
+    {
+     "month": "2026-07",
+     "median": 1390,
+     "n": 7
+    },
+    {
+     "month": "2026-08",
+     "median": 1490,
+     "n": 8
+    },
+    {
+     "month": "2026-09",
+     "median": 1490,
+     "n": 6
+    },
+    {
+     "month": "2026-10",
+     "median": 1400,
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "springfield-m1a",
+   "name": "Springfield M1A Standard",
+   "detail": ".308, walnut or synthetic",
+   "category": "Rifles",
+   "bands": {
+    "good": {
+     "low": 1150,
+     "median": 1300,
+     "high": 1350,
+     "n": 14
+    },
+    "very_good": {
+     "low": 1470,
+     "median": 1610,
+     "high": 1810,
+     "n": 22
+    },
+    "excellent": {
+     "low": 2000,
+     "median": 2110,
+     "high": 2240,
+     "n": 8
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 52,
+   "confidence": "high",
+   "trend_12m": -0.03,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 1650,
+     "n": 18
+    },
+    {
+     "month": "2025-12",
+     "median": 1510,
+     "n": 9
+    },
+    {
+     "month": "2026-01",
+     "median": 1650,
+     "n": 16
+    },
+    {
+     "month": "2026-02",
+     "median": 1560,
+     "n": 11
+    },
+    {
+     "month": "2026-03",
+     "median": 1550,
+     "n": 12
+    },
+    {
+     "month": "2026-04",
+     "median": 1540,
+     "n": 13
+    },
+    {
+     "month": "2026-05",
+     "median": 1610,
+     "n": 9
+    },
+    {
+     "month": "2026-06",
+     "median": 1600,
+     "n": 18
+    },
+    {
+     "month": "2026-07",
+     "median": 1690,
+     "n": 12
+    },
+    {
+     "month": "2026-08",
+     "median": 1480,
+     "n": 18
+    },
+    {
+     "month": "2026-09",
+     "median": 1640,
+     "n": 12
+    },
+    {
+     "month": "2026-10",
+     "median": 1600,
+     "n": 7
+    }
+   ]
+  },
+  {
+   "id": "mauser-k98k",
+   "name": "Mauser K98k",
+   "detail": "WWII German, 8mm",
+   "category": "Military surplus",
+   "bands": {
+    "good": {
+     "low": 1060,
+     "median": 1170,
+     "high": 1250,
+     "n": 15
+    },
+    "very_good": {
+     "low": 1310,
+     "median": 1360,
+     "high": 1550,
+     "n": 9
+    },
+    "excellent": {
+     "low": 1950,
+     "median": 2060,
+     "high": 2160,
+     "n": 8
+    }
+   },
+   "window_days": {
+    "good": 180,
+    "very_good": 90,
+    "excellent": 180
+   },
+   "sales_90d": 22,
+   "confidence": "medium",
+   "trend_12m": 0.102,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 1440,
+     "n": 9
+    },
+    {
+     "month": "2025-12",
+     "median": 1300,
+     "n": 11
+    },
+    {
+     "month": "2026-01",
+     "median": 1320,
+     "n": 9
+    },
+    {
+     "month": "2026-02",
+     "median": 1270,
+     "n": 7
+    },
+    {
+     "month": "2026-03",
+     "median": 1270,
+     "n": 10
+    },
+    {
+     "month": "2026-04",
+     "median": 1380,
+     "n": 12
+    },
+    {
+     "month": "2026-05",
+     "median": 1350,
+     "n": 10
+    },
+    {
+     "month": "2026-06",
+     "median": 1340,
+     "n": 9
+    },
+    {
+     "month": "2026-07",
+     "median": 1340,
+     "n": 12
+    },
+    {
+     "month": "2026-08",
+     "median": 1440,
+     "n": 8
+    },
+    {
+     "month": "2026-09",
+     "median": 1470,
+     "n": 4
+    },
+    {
+     "month": "2026-10",
+     "median": null,
+     "n": 0
+    }
+   ]
+  },
+  {
+   "id": "mosin-9130",
+   "name": "Mosin Nagant 91/30",
+   "detail": "Russian, 7.62x54R",
+   "category": "Military surplus",
+   "bands": {
+    "good": {
+     "low": 290,
+     "median": 320,
+     "high": 350,
+     "n": 29
+    },
+    "very_good": {
+     "low": 370,
+     "median": 400,
+     "high": 420,
+     "n": 27
+    },
+    "excellent": {
+     "low": 500,
+     "median": 540,
+     "high": 570,
+     "n": 15
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 81,
+   "confidence": "high",
+   "trend_12m": 0.025,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 400,
+     "n": 26
+    },
+    {
+     "month": "2025-12",
+     "median": 400,
+     "n": 23
+    },
+    {
+     "month": "2026-01",
+     "median": 400,
+     "n": 21
+    },
+    {
+     "month": "2026-02",
+     "median": 390,
+     "n": 26
+    },
+    {
+     "month": "2026-03",
+     "median": 380,
+     "n": 37
+    },
+    {
+     "month": "2026-04",
+     "median": 380,
+     "n": 19
+    },
+    {
+     "month": "2026-05",
+     "median": 390,
+     "n": 30
+    },
+    {
+     "month": "2026-06",
+     "median": 410,
+     "n": 26
+    },
+    {
+     "month": "2026-07",
+     "median": 390,
+     "n": 24
+    },
+    {
+     "month": "2026-08",
+     "median": 410,
+     "n": 19
+    },
+    {
+     "month": "2026-09",
+     "median": 390,
+     "n": 27
+    },
+    {
+     "month": "2026-10",
+     "median": 410,
+     "n": 7
+    }
+   ]
+  },
+  {
+   "id": "enfield-no4",
+   "name": "Lee Enfield No. 4 Mk I",
+   "detail": "British, .303",
+   "category": "Military surplus",
+   "bands": {
+    "good": {
+     "low": 540,
+     "median": 640,
+     "high": 680,
+     "n": 16
+    },
+    "very_good": {
+     "low": 720,
+     "median": 760,
+     "high": 800,
+     "n": 14
+    },
+    "excellent": {
+     "low": 1030,
+     "median": 1080,
+     "high": 1150,
+     "n": 9
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 43,
+   "confidence": "high",
+   "trend_12m": 0.049,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 720,
+     "n": 19
+    },
+    {
+     "month": "2025-12",
+     "median": 720,
+     "n": 11
+    },
+    {
+     "month": "2026-01",
+     "median": 700,
+     "n": 10
+    },
+    {
+     "month": "2026-02",
+     "median": 710,
+     "n": 14
+    },
+    {
+     "month": "2026-03",
+     "median": 740,
+     "n": 10
+    },
+    {
+     "month": "2026-04",
+     "median": 700,
+     "n": 10
+    },
+    {
+     "month": "2026-05",
+     "median": 720,
+     "n": 9
+    },
+    {
+     "month": "2026-06",
+     "median": 680,
+     "n": 11
+    },
+    {
+     "month": "2026-07",
+     "median": 760,
+     "n": 18
+    },
+    {
+     "month": "2026-08",
+     "median": 750,
+     "n": 11
+    },
+    {
+     "month": "2026-09",
+     "median": 760,
+     "n": 10
+    },
+    {
+     "month": "2026-10",
+     "median": null,
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "sks",
+   "name": "SKS",
+   "detail": "Yugoslav or Chinese, 7.62x39",
+   "category": "Military surplus",
+   "bands": {
+    "good": {
+     "low": 410,
+     "median": 460,
+     "high": 500,
+     "n": 19
+    },
+    "very_good": {
+     "low": 570,
+     "median": 620,
+     "high": 660,
+     "n": 25
+    },
+    "excellent": {
+     "low": 810,
+     "median": 860,
+     "high": 910,
+     "n": 8
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 60,
+   "confidence": "high",
+   "trend_12m": 0.033,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 600,
+     "n": 21
+    },
+    {
+     "month": "2025-12",
+     "median": 600,
+     "n": 18
+    },
+    {
+     "month": "2026-01",
+     "median": 630,
+     "n": 25
+    },
+    {
+     "month": "2026-02",
+     "median": 600,
+     "n": 17
+    },
+    {
+     "month": "2026-03",
+     "median": 640,
+     "n": 17
+    },
+    {
+     "month": "2026-04",
+     "median": 590,
+     "n": 9
+    },
+    {
+     "month": "2026-05",
+     "median": 600,
+     "n": 11
+    },
+    {
+     "month": "2026-06",
+     "median": 580,
+     "n": 11
+    },
+    {
+     "month": "2026-07",
+     "median": 620,
+     "n": 18
+    },
+    {
+     "month": "2026-08",
+     "median": 620,
+     "n": 17
+    },
+    {
+     "month": "2026-09",
+     "median": 620,
+     "n": 22
+    },
+    {
+     "month": "2026-10",
+     "median": null,
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "colt-python",
+   "name": "Colt Python",
+   "detail": "2020 production, .357 Magnum",
+   "category": "Revolvers",
+   "bands": {
+    "good": {
+     "low": 1030,
+     "median": 1080,
+     "high": 1200,
+     "n": 22
+    },
+    "very_good": {
+     "low": 1360,
+     "median": 1480,
+     "high": 1550,
+     "n": 27
+    },
+    "excellent": {
+     "low": 1810,
+     "median": 1970,
+     "high": 2090,
+     "n": 12
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 70,
+   "confidence": "high",
+   "trend_12m": -0.057,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 1580,
+     "n": 18
+    },
+    {
+     "month": "2025-12",
+     "median": 1540,
+     "n": 24
+    },
+    {
+     "month": "2026-01",
+     "median": 1570,
+     "n": 22
+    },
+    {
+     "month": "2026-02",
+     "median": 1500,
+     "n": 19
+    },
+    {
+     "month": "2026-03",
+     "median": 1610,
+     "n": 18
+    },
+    {
+     "month": "2026-04",
+     "median": 1510,
+     "n": 27
+    },
+    {
+     "month": "2026-05",
+     "median": 1560,
+     "n": 21
+    },
+    {
+     "month": "2026-06",
+     "median": 1530,
+     "n": 14
+    },
+    {
+     "month": "2026-07",
+     "median": 1490,
+     "n": 22
+    },
+    {
+     "month": "2026-08",
+     "median": 1480,
+     "n": 24
+    },
+    {
+     "month": "2026-09",
+     "median": 1460,
+     "n": 16
+    },
+    {
+     "month": "2026-10",
+     "median": 1560,
+     "n": 5
+    }
+   ]
+  },
+  {
+   "id": "sw-model-29",
+   "name": "Smith & Wesson Model 29",
+   "detail": ".44 Magnum, 6 inch",
+   "category": "Revolvers",
+   "bands": {
+    "good": {
+     "low": 890,
+     "median": 930,
+     "high": 1000,
+     "n": 15
+    },
+    "very_good": {
+     "low": 1110,
+     "median": 1220,
+     "high": 1270,
+     "n": 13
+    },
+    "excellent": {
+     "low": 1430,
+     "median": 1520,
+     "high": 1600,
+     "n": 11
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 180
+   },
+   "sales_90d": 39,
+   "confidence": "high",
+   "trend_12m": 0.052,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 1140,
+     "n": 10
+    },
+    {
+     "month": "2025-12",
+     "median": 1190,
+     "n": 9
+    },
+    {
+     "month": "2026-01",
+     "median": 1160,
+     "n": 10
+    },
+    {
+     "month": "2026-02",
+     "median": 1180,
+     "n": 13
+    },
+    {
+     "month": "2026-03",
+     "median": 1190,
+     "n": 11
+    },
+    {
+     "month": "2026-04",
+     "median": 1160,
+     "n": 16
+    },
+    {
+     "month": "2026-05",
+     "median": 1240,
+     "n": 9
+    },
+    {
+     "month": "2026-06",
+     "median": 1210,
+     "n": 11
+    },
+    {
+     "month": "2026-07",
+     "median": 1210,
+     "n": 11
+    },
+    {
+     "month": "2026-08",
+     "median": 1170,
+     "n": 10
+    },
+    {
+     "month": "2026-09",
+     "median": 1270,
+     "n": 17
+    },
+    {
+     "month": "2026-10",
+     "median": null,
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "glock-19-g5",
+   "name": "Glock 19 Gen 5",
+   "detail": "9mm, used",
+   "category": "Handguns",
+   "bands": {
+    "good": {
+     "low": 330,
+     "median": 360,
+     "high": 390,
+     "n": 73
+    },
+    "very_good": {
+     "low": 430,
+     "median": 460,
+     "high": 520,
+     "n": 85
+    },
+    "excellent": {
+     "low": 570,
+     "median": 630,
+     "high": 680,
+     "n": 39
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 222,
+   "confidence": "high",
+   "trend_12m": -0.042,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 490,
+     "n": 60
+    },
+    {
+     "month": "2025-12",
+     "median": 470,
+     "n": 69
+    },
+    {
+     "month": "2026-01",
+     "median": 480,
+     "n": 54
+    },
+    {
+     "month": "2026-02",
+     "median": 460,
+     "n": 50
+    },
+    {
+     "month": "2026-03",
+     "median": 480,
+     "n": 65
+    },
+    {
+     "month": "2026-04",
+     "median": 470,
+     "n": 62
+    },
+    {
+     "month": "2026-05",
+     "median": 470,
+     "n": 76
+    },
+    {
+     "month": "2026-06",
+     "median": 470,
+     "n": 52
+    },
+    {
+     "month": "2026-07",
+     "median": 470,
+     "n": 71
+    },
+    {
+     "month": "2026-08",
+     "median": 450,
+     "n": 70
+    },
+    {
+     "month": "2026-09",
+     "median": 460,
+     "n": 62
+    },
+    {
+     "month": "2026-10",
+     "median": 460,
+     "n": 10
+    }
+   ]
+  },
+  {
+   "id": "sig-p365",
+   "name": "SIG Sauer P365",
+   "detail": "9mm, used",
+   "category": "Handguns",
+   "bands": {
+    "good": {
+     "low": 320,
+     "median": 340,
+     "high": 370,
+     "n": 61
+    },
+    "very_good": {
+     "low": 410,
+     "median": 440,
+     "high": 470,
+     "n": 60
+    },
+    "excellent": {
+     "low": 560,
+     "median": 600,
+     "high": 660,
+     "n": 28
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 169,
+   "confidence": "high",
+   "trend_12m": -0.043,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 460,
+     "n": 47
+    },
+    {
+     "month": "2025-12",
+     "median": 450,
+     "n": 55
+    },
+    {
+     "month": "2026-01",
+     "median": 460,
+     "n": 57
+    },
+    {
+     "month": "2026-02",
+     "median": 460,
+     "n": 47
+    },
+    {
+     "month": "2026-03",
+     "median": 480,
+     "n": 55
+    },
+    {
+     "month": "2026-04",
+     "median": 450,
+     "n": 55
+    },
+    {
+     "month": "2026-05",
+     "median": 450,
+     "n": 65
+    },
+    {
+     "month": "2026-06",
+     "median": 450,
+     "n": 54
+    },
+    {
+     "month": "2026-07",
+     "median": 440,
+     "n": 47
+    },
+    {
+     "month": "2026-08",
+     "median": 440,
+     "n": 58
+    },
+    {
+     "month": "2026-09",
+     "median": 430,
+     "n": 50
+    },
+    {
+     "month": "2026-10",
+     "median": 460,
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "ruger-1022",
+   "name": "Ruger 10/22",
+   "detail": ".22 LR carbine, used",
+   "category": "Rifles",
+   "bands": {
+    "good": {
+     "low": 200,
+     "median": 210,
+     "high": 230,
+     "n": 54
+    },
+    "very_good": {
+     "low": 240,
+     "median": 270,
+     "high": 300,
+     "n": 69
+    },
+    "excellent": {
+     "low": 360,
+     "median": 380,
+     "high": 420,
+     "n": 28
+    }
+   },
+   "window_days": {
+    "good": 90,
+    "very_good": 90,
+    "excellent": 90
+   },
+   "sales_90d": 171,
+   "confidence": "high",
+   "trend_12m": 0.0,
+   "history": [
+    {
+     "month": "2025-11",
+     "median": 270,
+     "n": 50
+    },
+    {
+     "month": "2025-12",
+     "median": 270,
+     "n": 46
+    },
+    {
+     "month": "2026-01",
+     "median": 270,
+     "n": 39
+    },
+    {
+     "month": "2026-02",
+     "median": 260,
+     "n": 45
+    },
+    {
+     "month": "2026-03",
+     "median": 270,
+     "n": 40
+    },
+    {
+     "month": "2026-04",
+     "median": 270,
+     "n": 39
+    },
+    {
+     "month": "2026-05",
+     "median": 280,
+     "n": 36
+    },
+    {
+     "month": "2026-06",
+     "median": 270,
+     "n": 41
+    },
+    {
+     "month": "2026-07",
+     "median": 270,
+     "n": 45
+    },
+    {
+     "month": "2026-08",
+     "median": 270,
+     "n": 51
+    },
+    {
+     "month": "2026-09",
+     "median": 270,
+     "n": 54
+    },
+    {
+     "month": "2026-10",
+     "median": 290,
+     "n": 11
+    }
+   ]
+  }
+ ]
+}

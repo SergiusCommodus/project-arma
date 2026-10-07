@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Project Arma</title>
+<meta name="description" content="Fair market prices for firearms and ammunition: sold price ranges by condition, cost per round, and true landed cost.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Project <span>Arma</span></a>
+    <nav aria-label="Sections">
+      <a href="#guns">Guns</a><a href="#ammo">Ammo</a><a href="#landed">Landed cost</a><a href="#method">Method</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <span class="eyebrow">Fair market prices for firearms and ammunition</span>
+    <h1>Know the <em>going rate</em><br>before you buy.</h1>
+    <p>Sold prices by model and condition, cost per round for the calibers you actually shoot, and the true out the door cost of buying online versus at the counter.</p>
+    <div class="searchrow">
+      <input id="q" type="search" placeholder="Search a model, like M1 Garand or Thompson" aria-label="Search models" autocomplete="off">
+    </div>
+    <div class="chips" id="cats"></div>
+    <div class="notice" id="notice">Loading prices…</div>
+  </div>
+
+  <section class="block" id="guns">
+    <div class="wrap">
+      <div class="sechead">
+        <div><span class="eyebrow">Price guide</span><h2>What it's worth</h2>
+        <p>Pick a model, pick a condition, then check the price you were quoted.</p></div>
+      </div>
+      <div class="guns">
+        <div class="list" id="list" role="listbox" aria-label="Models"></div>
+        <div class="detail" id="detail"><p class="loading">Loading prices…</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="ammo">
+    <div class="wrap">
+      <div class="sechead">
+        <div><span class="eyebrow">Ammo tracker</span><h2>Cost per round</h2>
+        <p>Common calibers plus the historical ones the big trackers barely cover. Tap a column to sort.</p></div>
+      </div>
+      <div class="tablewrap"><table id="ammoTable"></table></div>
+      <div class="ammochk">
+        <div class="field"><label for="aCal">Caliber</label><select id="aCal"></select></div>
+        <div class="field"><label for="aPrice">Box price ($)</label><input id="aPrice" type="number" inputmode="decimal" value="21.99" min="0" step="0.01"></div>
+        <div class="field"><label for="aCount">Rounds in box</label><input id="aCount" type="number" inputmode="numeric" value="50" min="1" step="1"></div>
+        <div class="ammoout" id="aOut"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="landed">
+    <div class="wrap">
+      <div class="sechead">
+        <div><span class="eyebrow">Landed cost</span><h2>Online vs. the counter</h2>
+        <p>A cheaper online price is not always cheaper. Add shipping, the transfer fee, and tax, then compare it to the store's out the door price.</p></div>
+      </div>
+      <div class="landed">
+        <div class="inputs">
+          <div class="field"><label for="lPrice">Online price ($)</label><input id="lPrice" type="number" inputmode="decimal" value="1349" min="0" step="1"></div>
+          <div class="field"><label for="lShip">Shipping ($)</label><input id="lShip" type="number" inputmode="decimal" value="35" min="0" step="1"></div>
+          <div class="field"><label for="lFfl">FFL transfer fee ($)</label><input id="lFfl" type="number" inputmode="decimal" value="50" min="0" step="1"></div>
+          <div class="field"><label for="lTax">Sales tax (%)</label><input id="lTax" type="number" inputmode="decimal" value="7" min="0" step="0.1"></div>
+          <div class="field"><label for="lLocal">Local store out the door price ($)</label><input id="lLocal" type="number" inputmode="decimal" value="1529" min="0" step="1"></div>
+        </div>
+        <div class="receipt" id="receipt" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="stores">
+    <div class="wrap">
+      <div class="sechead">
+        <div><span class="eyebrow">Shop local · Sponsored</span><h2>Featured stores</h2>
+        <p>Sponsored placements are always labeled and never change a price, a rating, or a verdict on this site.</p></div>
+      </div>
+      <div class="sponsors">
+        <div class="slot"><span class="eyebrow">South Florida</span><b>Your shop here</b><p>Featured listing with hours, transfer fee, and specialties.</p></div>
+        <div class="slot"><span class="eyebrow">Transfer partner</span><b>Featured FFL</b><p>Shown next to the landed cost calculator for buyers in your area.</p></div>
+        <div class="slot"><span class="eyebrow">Deal of the week</span><b>Sponsored deal</b><p>One clearly labeled spot per week, checked against the price guide.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="method">
+    <div class="wrap">
+      <div class="sechead"><div><span class="eyebrow">Method</span><h2>How prices are set</h2></div></div>
+      <div class="method">
+        <div><h3>Sold, not asked</h3><p>Ranges come from completed sales. Asking prices on a rack are what the store hopes to get, so they never count.</p></div>
+        <div><h3>Median, trimmed</h3><p>One bidding war can skew an average. Each range drops the top and bottom outliers and reports the median, with the sample size beside it.</p></div>
+        <div><h3>Condition matters</h3><p>Good, Very Good, and Excellent are priced separately. A matching, correct rifle and a mixed parts rebuild are different markets.</p></div>
+        <div><h3>Independent</h3><p>Stores can sponsor a listing. They cannot buy a better verdict or move a number.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>Project Arma · a Carlisle Capital LLC project</span><span>Information only. We do not sell firearms or process transfers.</span></div></footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

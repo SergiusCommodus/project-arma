@@ -1,0 +1,34 @@
+{
+  "models": [
+    {"id": "m1-garand", "name": "M1 Garand", "detail": "USGI .30-06, Springfield Armory or HRA", "category": "Military surplus"},
+    {"id": "m1-carbine", "name": "M1 Carbine", "detail": "USGI .30 Carbine, Inland or Winchester", "category": "Military surplus"},
+    {"id": "thompson-1927a1", "name": "Thompson 1927A1", "detail": "Auto Ordnance semi auto, .45 ACP", "category": "Rifles"},
+    {"id": "m1911a1", "name": "M1911A1", "detail": "USGI WWII issue, .45 ACP", "category": "Handguns"},
+    {"id": "colt-saa", "name": "Colt Single Action Army", "detail": "Third generation, .45 Colt", "category": "Revolvers"},
+    {"id": "winchester-1873", "name": "Winchester 1873", "detail": "Miroku made, .45 Colt or .357", "category": "Rifles"},
+    {"id": "springfield-m1a", "name": "Springfield M1A Standard", "detail": ".308, walnut or synthetic", "category": "Rifles"},
+    {"id": "mauser-k98k", "name": "Mauser K98k", "detail": "WWII German, 8mm", "category": "Military surplus"},
+    {"id": "mosin-9130", "name": "Mosin Nagant 91/30", "detail": "Russian, 7.62x54R", "category": "Military surplus"},
+    {"id": "enfield-no4", "name": "Lee Enfield No. 4 Mk I", "detail": "British, .303", "category": "Military surplus"},
+    {"id": "sks", "name": "SKS", "detail": "Yugoslav or Chinese, 7.62x39", "category": "Military surplus"},
+    {"id": "colt-python", "name": "Colt Python", "detail": "2020 production, .357 Magnum", "category": "Revolvers"},
+    {"id": "sw-model-29", "name": "Smith & Wesson Model 29", "detail": ".44 Magnum, 6 inch", "category": "Revolvers"},
+    {"id": "glock-19-g5", "name": "Glock 19 Gen 5", "detail": "9mm, used", "category": "Handguns"},
+    {"id": "sig-p365", "name": "SIG Sauer P365", "detail": "9mm, used", "category": "Handguns"},
+    {"id": "ruger-1022", "name": "Ruger 10/22", "detail": ".22 LR carbine, used", "category": "Rifles"}
+  ],
+  "calibers": [
+    {"id": "9mm", "name": "9mm Luger", "load": "115gr FMJ, brass", "historical": false},
+    {"id": "22lr", "name": ".22 LR", "load": "40gr, bulk", "historical": false},
+    {"id": "556", "name": "5.56 NATO", "load": "55gr FMJ, brass", "historical": false},
+    {"id": "308", "name": ".308 Win", "load": "147gr FMJ", "historical": false},
+    {"id": "38spl", "name": ".38 Special", "load": "130gr FMJ", "historical": false},
+    {"id": "12ga-00", "name": "12 ga 00 Buck", "load": "2.75 in, 9 pellet", "historical": false},
+    {"id": "45acp", "name": ".45 ACP", "load": "230gr FMJ", "historical": true},
+    {"id": "30carbine", "name": ".30 Carbine", "load": "110gr FMJ", "historical": true},
+    {"id": "3006-m2", "name": ".30-06 M2 Ball", "load": "150gr FMJ, Garand safe", "historical": true},
+    {"id": "45colt", "name": ".45 Colt", "load": "250gr lead, cowboy load", "historical": true},
+    {"id": "303brit", "name": ".303 British", "load": "174gr FMJ", "historical": true},
+    {"id": "762x54r", "name": "7.62x54R", "load": "148gr FMJ", "historical": true}
+  ]
+}
