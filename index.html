@@ -7,7 +7,7 @@
 <meta name="description" content="Fair market prices for firearms and ammunition: sold price ranges by condition, cost per round, and true landed cost.">
 <meta name="color-scheme" content="light">
 <meta name="theme-color" content="#3B4220">
-<script>(function(){var d=document.documentElement;try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("anim");var s=null;try{s=sessionStorage.getItem("arma-intro")}catch(e){}if(!s){d.classList.add("show-intro","late")}}catch(e){}})();</script>
+<script>(function(){var d=document.documentElement;try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("anim");var s=null;try{s=sessionStorage.getItem("arma-intro")}catch(e){}if(!s){d.classList.add("show-intro","late","gated")}}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Oswald:wght@400;500;600;700&family=Libre+Franklin:wght@400;500;600;700&family=Special+Elite&family=Yellowtail&display=swap">
@@ -16,6 +16,16 @@
 <body>
 <a class="skip" href="#guns">Skip to the price guide</a>
 
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <div class="gatein">
+    <span class="roundel" aria-hidden="true"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="48"/><path d="M50 12l9 27.6h29L64.5 56.7l9 27.6L50 67.2 26.5 84.3l9-27.6L12 39.6h29z"/></svg></span>
+    <p class="gk">Ordnance Price Bureau</p>
+    <h2 id="gateTitle">Project Arma</h2>
+    <button type="button" class="btn red big" id="enter">Report for duty <span aria-hidden="true">▸</span></button>
+    <button type="button" class="quiet" id="enterQuiet">Enter without sound</button>
+  </div>
+</div>
+<audio id="theme" src="assets/arma-theme.mp3" preload="auto" loop></audio>
 <div class="intro" id="intro" aria-hidden="true">
   <div class="door dl"><span>Project</span></div>
   <div class="door dr"><span>Arma</span></div>
@@ -196,6 +206,7 @@
 </footer>
 
 <button class="totop" id="totop" type="button" aria-label="Back to top"><span>Top</span></button>
+<button class="sound" id="sound" type="button" aria-pressed="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span id="soundLbl">Sound off</span></button>
 <script src="assets/app.js" defer></script>
 </body>
 </html>

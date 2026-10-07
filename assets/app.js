@@ -297,13 +297,42 @@
     set("#stSales", GUNS.reduce((s, g) => s + (g.sales_90d || 0), 0));
     set("#stCals", AMMO.length);
     const late = root.classList.contains("late");
-    $$("#stats [data-count]").forEach((e, k) => countUp(e, (late ? 2700 : 1400) + k * 140));
+    entered.then(() => $$("#stats [data-count]").forEach((e, k) => countUp(e, (late ? 2700 : 1400) + k * 140)));
   }
   function wireTiles() {
     $("#searchform").onsubmit = (e) => { e.preventDefault(); goGuns(); };
     $$("[data-cat]").forEach((t) => (t.onclick = (e) => {
       e.preventDefault(); cat = t.dataset.cat; query = ""; $("#q").value = ""; renderCats(); renderList(); keepSelection(); goGuns();
     }));
+  }
+
+  /* ---------- Entry gate and music: the click that enters the site also starts the theme ---------- */
+  let enterResolve;
+  const entered = new Promise((r) => (enterResolve = r));
+  const audio = $("#theme"), sBtn = $("#sound");
+  let fadeT;
+  function setSound(on) { sBtn.setAttribute("aria-pressed", on); $("#soundLbl").textContent = on ? "Sound on" : "Sound off"; }
+  function startMusic() {
+    if (!audio) return;
+    clearInterval(fadeT);
+    audio.volume = 0;
+    const p = audio.play();
+    const fadeIn = () => { setSound(true); fadeT = setInterval(() => { audio.volume = Math.min(0.6, audio.volume + 0.04); if (audio.volume >= 0.6) clearInterval(fadeT); }, 80); };
+    if (p && p.then) p.then(fadeIn).catch(() => setSound(false)); else fadeIn();
+  }
+  function stopMusic() {
+    clearInterval(fadeT);
+    fadeT = setInterval(() => { audio.volume = Math.max(0, audio.volume - 0.06); if (audio.volume <= 0) { clearInterval(fadeT); audio.pause(); } }, 60);
+    setSound(false);
+  }
+  function gate() {
+    sBtn.onclick = () => (audio.paused || sBtn.getAttribute("aria-pressed") === "false" ? startMusic() : stopMusic());
+    const g = $("#gate");
+    if (!root.classList.contains("gated") || !g) { if (g) g.remove(); root.classList.remove("gated"); enterResolve(); return; }
+    const go = (withSound) => { if (withSound) startMusic(); root.classList.remove("gated"); g.remove(); enterResolve(); };
+    $("#enter").onclick = () => go(true);
+    $("#enterQuiet").onclick = () => go(false);
+    $("#enter").focus();
   }
 
   /* ---------- Page chrome: intro, scrollspy, tracer, back to top, parallax ---------- */
@@ -368,7 +397,8 @@
   }
 
   async function boot() {
-    intro();
+    gate();
+    entered.then(intro);
     chrome();
     watch();
     renderCats();
