@@ -8,13 +8,13 @@
 <meta name="color-scheme" content="light dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700;800&family=Libre+Franklin:wght@400;500;600;700;800&family=Courier+Prime:wght@400;700&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#top">Project <span>Arma</span></a>
+    <a class="brand" href="#top"><svg class="roundel" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20"/><path d="M20 4.5l3.9 11.9h12.5l-10.1 7.4 3.9 11.9L20 28.3l-10.2 7.4 3.9-11.9L3.6 16.4h12.5z"/></svg>Project Arma</a>
     <nav aria-label="Sections">
       <a href="#guns">Guns</a><a href="#ammo">Ammo</a><a href="#landed">Landed cost</a><a href="#method">Method</a>
     </nav>
@@ -23,8 +23,8 @@
 
 <main id="top">
   <div class="wrap hero">
-    <span class="eyebrow">Fair market prices for firearms and ammunition</span>
-    <h1>Know the <em>going rate</em><br>before you buy.</h1>
+    <div class="docline"><span>Price Bulletin No. 1</span><span>Firearms and ammunition</span><span id="asof">Revised October 2026</span></div>
+    <h1>Know the<br><em>going rate</em><br>before you buy.</h1>
     <p>Sold prices by model and condition, cost per round for the calibers you actually shoot, and the true out the door cost of buying online versus at the counter.</p>
     <div class="searchrow">
       <input id="q" type="search" placeholder="Search a model, like M1 Garand or Thompson" aria-label="Search models" autocomplete="off">
@@ -36,7 +36,7 @@
   <section class="block" id="guns">
     <div class="wrap">
       <div class="sechead">
-        <div><span class="eyebrow">Price guide</span><h2>What it's worth</h2>
+        <div><span class="eyebrow"><span class="secno">Section I</span> · Price guide</span><h2>What it's worth</h2>
         <p>Pick a model, pick a condition, then check the price you were quoted.</p></div>
       </div>
       <div class="guns">
@@ -49,7 +49,7 @@
   <section class="block" id="ammo">
     <div class="wrap">
       <div class="sechead">
-        <div><span class="eyebrow">Ammo tracker</span><h2>Cost per round</h2>
+        <div><span class="eyebrow"><span class="secno">Section II</span> · Ammunition</span><h2>Cost per round</h2>
         <p>Common calibers plus the historical ones the big trackers barely cover. Tap a column to sort.</p></div>
       </div>
       <div class="tablewrap"><table id="ammoTable"></table></div>
@@ -65,7 +65,7 @@
   <section class="block" id="landed">
     <div class="wrap">
       <div class="sechead">
-        <div><span class="eyebrow">Landed cost</span><h2>Online vs. the counter</h2>
+        <div><span class="eyebrow"><span class="secno">Section III</span> · Landed cost</span><h2>Online vs. the counter</h2>
         <p>A cheaper online price is not always cheaper. Add shipping, the transfer fee, and tax, then compare it to the store's out the door price.</p></div>
       </div>
       <div class="landed">
@@ -84,7 +84,7 @@
   <section class="block" id="stores">
     <div class="wrap">
       <div class="sechead">
-        <div><span class="eyebrow">Shop local · Sponsored</span><h2>Featured stores</h2>
+        <div><span class="eyebrow"><span class="secno">Section IV</span> · Shop local · Sponsored</span><h2>Featured stores</h2>
         <p>Sponsored placements are always labeled and never change a price, a rating, or a verdict on this site.</p></div>
       </div>
       <div class="sponsors">
@@ -97,18 +97,18 @@
 
   <section class="block" id="method">
     <div class="wrap">
-      <div class="sechead"><div><span class="eyebrow">Method</span><h2>How prices are set</h2></div></div>
+      <div class="sechead"><div><span class="eyebrow"><span class="secno">Section V</span> · Method</span><h2>How prices are set</h2></div></div>
       <div class="method">
-        <div><h3>Sold, not asked</h3><p>Ranges come from completed sales. Asking prices on a rack are what the store hopes to get, so they never count.</p></div>
-        <div><h3>Median, trimmed</h3><p>One bidding war can skew an average. Each range drops the top and bottom outliers and reports the median, with the sample size beside it.</p></div>
-        <div><h3>Condition matters</h3><p>Good, Very Good, and Excellent are priced separately. A matching, correct rifle and a mixed parts rebuild are different markets.</p></div>
-        <div><h3>Independent</h3><p>Stores can sponsor a listing. They cannot buy a better verdict or move a number.</p></div>
+        <div><h3><span>a.</span>Sold, not asked</h3><p>Ranges come from completed sales. Asking prices on a rack are what the store hopes to get, so they never count.</p></div>
+        <div><h3><span>b.</span>Median, trimmed</h3><p>One bidding war can skew an average. Each range drops the top and bottom outliers and reports the median, with the sample size beside it.</p></div>
+        <div><h3><span>c.</span>Condition matters</h3><p>Good, Very Good, and Excellent are priced separately. A matching, correct rifle and a mixed parts rebuild are different markets.</p></div>
+        <div><h3><span>d.</span>Independent</h3><p>Stores can sponsor a listing. They cannot buy a better verdict or move a number.</p></div>
       </div>
     </div>
   </section>
 </main>
 
-<footer><div class="wrap"><span>Project Arma · a Carlisle Capital LLC project</span><span>Information only. We do not sell firearms or process transfers.</span></div></footer>
+<footer><div class="wrap"><span class="fl"><svg class="roundel" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20"/><path d="M20 4.5l3.9 11.9h12.5l-10.1 7.4 3.9 11.9L20 28.3l-10.2 7.4 3.9-11.9L3.6 16.4h12.5z"/></svg>Project Arma · A Carlisle Capital LLC project</span><span>Information only. We do not sell firearms or process transfers.</span></div></footer>
 <script src="assets/app.js" defer></script>
 </body>
 </html>

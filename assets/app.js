@@ -175,6 +175,7 @@
   /* ---------- Boot ---------- */
   function notice() {
     const d = META.as_of ? new Date(META.as_of + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }) : "";
+    if (d) $("#asof").textContent = "Revised " + d;
     $("#notice").innerHTML = META.sample
       ? `<b>Prototype.</b> Prices are generated sample data for design review, not live market data. Updated ${d}.`
       : `Prices from completed sales and retailer listings. Updated ${d}.`;
