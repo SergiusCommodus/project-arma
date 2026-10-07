@@ -6,73 +6,86 @@
 <title>Project Arma</title>
 <meta name="description" content="Fair market prices for firearms and ammunition: sold price ranges by condition, cost per round, and true landed cost.">
 <meta name="color-scheme" content="light">
-<meta name="theme-color" content="#F3ECDB">
+<meta name="theme-color" content="#26271F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Barlow:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@400;500;600&family=Special+Elite&family=Yellowtail&display=swap">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-<header class="top">
+<div class="util"><div class="wrap"><span id="asof">Price bulletin</span><span><a href="#stores">Sponsor a listing</a><i>|</i><a href="#method">How we price</a></span></div></div>
+
+<header class="masthead">
   <div class="wrap">
-    <a class="brand" href="#top">Project Arma</a>
-    <nav aria-label="Sections">
-      <a href="#guns">Guns</a><a href="#ammo">Ammo</a><a href="#landed">Landed cost</a><a href="#method">Method</a>
-    </nav>
+    <a class="logo" href="#top" aria-label="Project Arma home">
+      <span class="seal" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 5l3.6 11h11.6l-9.4 6.8 3.6 11L20 27l-9.4 6.8 3.6-11L4.8 16h11.6z"/></svg></span>
+      <span class="lt"><b>Project Arma</b><span class="sub">Price Guide Co.</span><span class="tagline">American heritage · Honest prices</span></span>
+    </a>
+    <div class="motto" aria-hidden="true">Know the<br>Going Rate</div>
+    <div class="side">
+      <div class="promise">Fair prices for firearms and ammo<br><span>★ Est. 2026 ★</span></div>
+      <form class="search" id="searchform" role="search">
+        <input id="q" type="search" placeholder="Search models, like M1 Garand" aria-label="Search models" autocomplete="off">
+        <button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="M15 15l6 6"/></svg></button>
+      </form>
+    </div>
   </div>
 </header>
 
-<main id="top">
-  <div class="wrap cover">
-    <div class="kicker"><span>Know the going rate <em>before you buy!</em></span><span class="issue"><span id="asof">Oct. 2026</span><b>FREE</b></span></div>
-    <h1 class="mast">Project Arma</h1>
-    <div class="dek"><span>Firearms</span><i></i><span>Ammunition</span><i></i><span>Sold prices</span><i></i><span>The market</span></div>
-
-    <div class="grid">
-      <div class="col left">
-        <a class="blk orange" href="#guns"><svg class="ico" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><ellipse cx="40" cy="40" rx="34" ry="12"/><ellipse cx="40" cy="40" rx="34" ry="12" transform="rotate(60 40 40)"/><ellipse cx="40" cy="40" rx="34" ry="12" transform="rotate(120 40 40)"/><circle cx="40" cy="40" r="6" fill="currentColor"/></svg><b>What it's worth</b><span>Sold prices by model and condition</span></a>
-        <a class="blk magenta" href="#ammo"><svg class="ico" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M30 70V34c0-14 10-26 10-26s10 12 10 26v36z"/><path d="M30 46h20M26 70h28"/></svg><b>Cost per round</b><span>Common and historical calibers</span></a>
-        <a class="blk purple" href="#landed"><svg class="ico" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="40" cy="40" r="28"/><path d="M12 40h56M40 12c-12 14-12 42 0 56M40 12c12 14 12 42 0 56M18 26h44M18 54h44"/></svg><b>Online vs. the counter</b><span>True landed cost, tax and transfer in</span></a>
-      </div>
-      <figure class="photo"><img src="assets/arma-hero.jpg" width="900" height="900" alt="Project Arma cover art: a pinup seated on a bomb in front of a star roundel"></figure>
-      <div class="col right">
-        <div class="blk yellow burst"><svg viewBox="0 0 120 120" aria-hidden="true"><line x1="60" y1="60" x2="112.0" y2="60.0" stroke="#FFFFFF" stroke-width="2.4"/><line x1="60" y1="60" x2="108.0" y2="79.9" stroke="#FFFFFF" stroke-width="1.2"/><line x1="60" y1="60" x2="96.8" y2="96.8" stroke="#FFFFFF" stroke-width="2.4"/><line x1="60" y1="60" x2="79.9" y2="108.0" stroke="#FFFFFF" stroke-width="1.2"/><line x1="60" y1="60" x2="60.0" y2="112.0" stroke="#FFFFFF" stroke-width="2.4"/><line x1="60" y1="60" x2="40.1" y2="108.0" stroke="#FFFFFF" stroke-width="1.2"/><line x1="60" y1="60" x2="23.2" y2="96.8" stroke="#FFFFFF" stroke-width="2.4"/><line x1="60" y1="60" x2="12.0" y2="79.9" stroke="#FFFFFF" stroke-width="1.2"/><line x1="60" y1="60" x2="8.0" y2="60.0" stroke="#FFFFFF" stroke-width="2.4"/><line x1="60" y1="60" x2="12.0" y2="40.1" stroke="#FFFFFF" stroke-width="1.2"/><line x1="60" y1="60" x2="23.2" y2="23.2" stroke="#FFFFFF" stroke-width="2.4"/><line x1="60" y1="60" x2="40.1" y2="12.0" stroke="#FFFFFF" stroke-width="1.2"/><line x1="60" y1="60" x2="60.0" y2="8.0" stroke="#FFFFFF" stroke-width="2.4"/><line x1="60" y1="60" x2="79.9" y2="12.0" stroke="#FFFFFF" stroke-width="1.2"/><line x1="60" y1="60" x2="96.8" y2="23.2" stroke="#FFFFFF" stroke-width="2.4"/><line x1="60" y1="60" x2="108.0" y2="40.1" stroke="#FFFFFF" stroke-width="1.2"/></svg></div>
-        <div class="blk stripes"><span class="sun"></span></div>
-        <a class="blk blue" href="#stores"><b>Shop local</b><span>Featured stores and transfer partners</span></a>
-      </div>
-    </div>
-
-    <div class="band">
-      <div class="bandtxt"><span class="eyebrow">Special feature</span><h2>Check any price in seconds</h2></div>
-      <div class="bandsearch">
-        <input id="q" type="search" placeholder="Search a model, like M1 Garand" aria-label="Search models" autocomplete="off">
-        <div class="chips" id="cats"></div>
-        <div class="notice" id="notice">Loading prices…</div>
-      </div>
-    </div>
+<nav class="mainnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#top" class="on">Home</a><a href="#guns">Price guide</a><a href="#ammo">Ammunition</a><a href="#landed">Landed cost</a><a href="#stores">Stores</a><a href="#method">Method</a>
   </div>
+</nav>
 
-  <section class="block orange" id="guns">
-    <div class="wrap">
-      <div class="sechead">
-        <div><span class="eyebrow">01 · Price guide</span><h2>What it's worth</h2>
-        <p>Pick a model, pick a condition, then check the price you were quoted.</p></div>
+<main id="top">
+  <div class="wrap">
+    <section class="hero">
+      <div class="heroimg"><img src="assets/arma-hero.jpg" width="900" height="900" alt="Project Arma nose art: a pinup seated on a bomb in front of a star roundel"></div>
+      <div class="heropanel">
+        <h1>Know the going rate</h1>
+        <p class="heroline">Sold prices. Honest verdicts.</p>
+        <p class="herocopy">Check what a Garand, a 1911, or a box of .30 Carbine really sells for before you hand over your money.</p>
+        <a class="btn light" href="#guns">Check a price <span aria-hidden="true">&#9656;</span></a>
+        <p class="notice" id="notice">Loading prices…</p>
       </div>
+    </section>
+
+    <section class="tiles" aria-label="Browse by category">
+      <a class="tile" href="#guns" data-cat="Military surplus">
+        <svg class="sil" viewBox="0 0 200 60" aria-hidden="true"><path d="M4 40l38-10h30l4-4h118v5h-70l-2 6h-38l-8 8H62l-6-6z"/><path d="M96 37h8l-2 12h-6z"/></svg>
+        <b>Military surplus</b><span>Garands · Carbines · Mausers</span><i aria-hidden="true">&#9656;</i></a>
+      <a class="tile" href="#guns" data-cat="Rifles">
+        <svg class="sil" viewBox="0 0 200 60" aria-hidden="true"><path d="M6 38l36-8h40l6-6h104v6H96l-4 4h-6l-2 8H70l-8 6H48l-6-8z"/><path d="M78 37h10l-3 16h-8z"/></svg>
+        <b>Rifles</b><span>Lever guns · Battle rifles · Rimfire</span><i aria-hidden="true">&#9656;</i></a>
+      <a class="tile" href="#guns" data-cat="Handguns">
+        <svg class="sil" viewBox="0 0 200 60" aria-hidden="true"><path d="M60 10h88v14H104l-4 8h-8l-8 24H64l8-24-12-4z"/><path d="M88 32a6 6 0 0 0 10 0" fill="none" stroke-width="3"/></svg>
+        <b>Handguns</b><span>1911s · Striker fired · Service pistols</span><i aria-hidden="true">&#9656;</i></a>
+      <a class="tile" href="#guns" data-cat="Revolvers">
+        <svg class="sil" viewBox="0 0 200 60" aria-hidden="true"><path d="M86 14h82v9H86z"/><rect x="66" y="10" width="26" height="22" rx="3"/><path d="M64 28h18l-10 28H54l8-22z"/><path d="M60 16l-8-6 4-2 10 6z"/></svg>
+        <b>Revolvers</b><span>Single action · Double action</span><i aria-hidden="true">&#9656;</i></a>
+    </section>
+
+    <section class="featwrap" aria-labelledby="feath">
+      <div class="rulehead"><span class="star" aria-hidden="true">★</span><h2 id="feath">Featured prices</h2><span class="star" aria-hidden="true">★</span><a class="btn small" href="#guns">View all <span aria-hidden="true">&#9656;</span></a></div>
+      <div class="featured" id="featured"></div>
+    </section>
+
+    <section class="block" id="guns">
+      <div class="rulehead"><span class="star" aria-hidden="true">★</span><h2>What it's worth</h2><span class="star" aria-hidden="true">★</span></div>
+      <p class="lede">Pick a model and a condition, then check the price you were quoted.</p>
+      <div class="chips" id="cats"></div>
       <div class="card">
         <div class="guns">
           <div class="list" id="list" role="listbox" aria-label="Models"></div>
           <div class="detail" id="detail"><p class="loading">Loading prices…</p></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="block magenta" id="ammo">
-    <div class="wrap">
-      <div class="sechead">
-        <div><span class="eyebrow">02 · Ammunition</span><h2>Cost per round</h2>
-        <p>Common and historical calibers. Tap a column to sort.</p></div>
-      </div>
+    <section class="block" id="ammo">
+      <div class="rulehead"><span class="star" aria-hidden="true">★</span><h2>Ammunition</h2><span class="star" aria-hidden="true">★</span></div>
+      <p class="lede">Cost per round for common and historical calibers. Tap a column to sort.</p>
       <div class="card">
         <div class="tablewrap"><table id="ammoTable"></table></div>
         <div class="ammochk">
@@ -82,15 +95,11 @@
           <div class="ammoout" id="aOut"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="block purple" id="landed">
-    <div class="wrap">
-      <div class="sechead">
-        <div><span class="eyebrow">03 · Landed cost</span><h2>Online vs. the counter</h2>
-        <p>Online price plus shipping, transfer fee, and tax, compared with the store's out the door price.</p></div>
-      </div>
+    <section class="block" id="landed">
+      <div class="rulehead"><span class="star" aria-hidden="true">★</span><h2>Online vs. the counter</h2><span class="star" aria-hidden="true">★</span></div>
+      <p class="lede">Online price plus shipping, transfer fee, and tax, compared with the store's out the door price.</p>
       <div class="card">
         <div class="landed">
           <div class="inputs">
@@ -103,32 +112,28 @@
           <div class="receipt" id="receipt" aria-live="polite"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="block blue" id="stores">
-    <div class="wrap">
-      <div class="sechead">
-        <div><span class="eyebrow">04 · Sponsored</span><h2>Featured stores</h2>
-        <p>Sponsored spots are always labeled and never change a price or a verdict.</p></div>
+    <section class="promos" id="stores" aria-label="Featured stores and more">
+      <div class="promo tan">
+        <span class="seal sm" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 5l3.6 11h11.6l-9.4 6.8 3.6 11L20 27l-9.4 6.8 3.6-11L4.8 16h11.6z"/></svg></span>
+        <div><h3>Your shop here</h3><p class="kick">Sponsored · South Florida</p><p>Featured listing with hours, transfer fee, and specialties. Always labeled. Never changes a price.</p></div>
       </div>
-      <div class="sponsors">
-        <div class="slot"><span class="eyebrow">South Florida</span><b>Your shop here</b><p>Featured listing with hours, transfer fee, and specialties.</p></div>
-        <div class="slot"><span class="eyebrow">Transfer partner</span><b>Featured FFL</b><p>Shown next to the landed cost calculator for buyers nearby.</p></div>
-        <div class="slot"><span class="eyebrow">Deal of the week</span><b>Sponsored deal</b><p>One labeled spot a week, checked against the price guide.</p></div>
+      <div class="promo red">
+        <div><h3>Ammo for less</h3><p>Cost per round for 12 calibers, with the lowest offer today.</p><a class="btn light" href="#ammo">Check ammo <span aria-hidden="true">&#9656;</span></a></div>
       </div>
-    </div>
-  </section>
+      <div class="promo tan">
+        <div><p class="script">A tradition of fair prices</p><p class="kick">Featured FFL · Transfer partner</p><p>Shown beside the landed cost calculator for buyers nearby.</p><a class="btn" href="#landed">Compare costs <span aria-hidden="true">&#9656;</span></a></div>
+      </div>
+    </section>
+  </div>
 
-  <section class="block yellow" id="method">
+  <section class="trust" id="method" aria-label="How prices are set">
     <div class="wrap">
-      <div class="sechead"><div><span class="eyebrow">05 · Method</span><h2>How prices are set</h2></div></div>
-      <div class="method">
-        <div><h3>Sold, not asked</h3><p>Ranges come from completed sales. Asking prices on a rack never count.</p></div>
-        <div><h3>Median, trimmed</h3><p>Outliers at both ends are dropped, and every range shows its number of sales.</p></div>
-        <div><h3>Condition matters</h3><p>Good, Very Good, and Excellent are priced separately.</p></div>
-        <div><h3>Independent</h3><p>Stores can sponsor a listing. They cannot buy a better verdict.</p></div>
-      </div>
+      <div class="tr"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17"/><path d="M20 9l2.6 8h8.4l-6.8 5 2.6 8L20 25l-6.8 5 2.6-8-6.8-5h8.4z"/></svg><p><b>Sold, not asked</b>Only completed sales count</p></div>
+      <div class="tr"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 32h30M9 28V18M17 28V10M25 28v-8M33 28V14"/></svg><p><b>Median, trimmed</b>Outliers dropped, sales counted</p></div>
+      <div class="tr"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4l13 5v10c0 9-6 15-13 17-7-2-13-8-13-17V9z"/><path d="M13 20l5 5 9-10"/></svg><p><b>Condition graded</b>Good, Very Good, Excellent</p></div>
+      <div class="tr"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 34c-8-4-12-11-12-20M20 34c8-4 12-11 12-20M10 16c-3-1-4-3-4-6M30 16c3-1 4-3 4-6M11 23c-3 0-5-2-6-4M29 23c3 0 5-2 6-4"/></svg><p><b>Independent</b>Sponsors never buy a verdict</p></div>
     </div>
   </section>
 </main>

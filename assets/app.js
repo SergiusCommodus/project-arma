@@ -172,10 +172,33 @@
       <span style="font-family:var(--body);font-size:12px;color:var(--muted)">Tax rules vary by state and seller. Transfer fees run roughly $25 to $75.</span>`;
   }
 
+  /* ---------- Featured and category tiles ---------- */
+  const FEATURED = ["m1-garand", "m1911a1", "m1-carbine", "thompson-1927a1"];
+  const goGuns = () => $("#guns").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+  function showModel(i) { sel = i; quote = null; if (!visible().includes(i)) { cat = "All"; query = ""; $("#q").value = ""; renderCats(); } renderList(); renderDetail(); goGuns(); }
+  function renderFeatured() {
+    const el = $("#featured"); if (!el) return;
+    el.innerHTML = FEATURED.map((id) => GUNS.findIndex((g) => g.id === id)).filter((i) => i >= 0).map((i) => {
+      const g = GUNS[i], b = g.bands.very_good;
+      return `<article class="feat"><div class="featimg"><span class="featcat">${esc(g.category)}</span><span class="featbig">${money(b.median)}</span><span class="featsub">median sold · Very Good</span></div>
+        <h3>${esc(g.name)}</h3><p>${esc(g.detail)}</p><p class="featrng">${money(b.low)} to ${money(b.high)}</p>
+        <button type="button" class="btn" data-i="${i}">View prices <span aria-hidden="true">&#9656;</span></button></article>`;
+    }).join("");
+    el.querySelectorAll("button[data-i]").forEach((b) => (b.onclick = () => showModel(+b.dataset.i)));
+  }
+  function wireTiles() {
+    const sf = $("#searchform"); if (sf) sf.onsubmit = (e) => { e.preventDefault(); goGuns(); };
+    document.querySelectorAll("[data-cat]").forEach((t) => (t.onclick = (e) => {
+      e.preventDefault(); cat = t.dataset.cat; query = ""; $("#q").value = ""; renderCats(); renderList();
+      const v = visible(); if (v.length && !v.includes(sel)) { sel = v[0]; quote = null; renderDetail(); renderList(); }
+      goGuns();
+    }));
+  }
+
   /* ---------- Boot ---------- */
   function notice() {
     const d = META.as_of ? new Date(META.as_of + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }) : "";
-    if (META.as_of && $("#asof")) $("#asof").textContent = new Date(META.as_of + "T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" }).replace(" ", ". ").toUpperCase();
+    if (d && $("#asof")) $("#asof").textContent = "Updated " + d;
     $("#notice").innerHTML = META.sample
       ? `<b>Preview:</b> prices shown are sample data, not live market prices.`
       : `Prices from completed sales and retailer listings. Updated ${d}.`;
@@ -204,7 +227,7 @@
     aCal.value = String(Math.max(0, AMMO.findIndex((a) => a.id === "45acp")));
     ["#aCal", "#aPrice", "#aCount"].forEach((s) => $(s).addEventListener("input", ammoCheck));
     quote = Math.round((GUNS[0].bands.very_good.median || 0) * 1.07) || null;
-    renderList(); renderDetail(); renderAmmo(); ammoCheck();
+    renderList(); renderDetail(); renderAmmo(); ammoCheck(); renderFeatured(); wireTiles();
   }
   boot();
 })();
