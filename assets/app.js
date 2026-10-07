@@ -62,7 +62,7 @@
     mn = Math.floor(mn / step) * step; mx = Math.ceil(mx / step) * step;
     const n = g.history.length - 1;
     const x = (i) => L + (i * (W - L - R)) / n, y = (v) => T + ((mx - v) * (H - T - B)) / (mx - mn);
-    const mono = 'font-family="Share Tech Mono,monospace" font-size="12" fill="var(--muted)"';
+    const mono = 'font-family="Oswald,Arial Narrow,sans-serif" font-size="12" fill="var(--muted)"';
     let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="12 month median sold price for ${esc(g.name)}, Very Good condition">`;
     for (let v = mn; v <= mx; v += step)
       s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="var(--rule)"/><text x="${L - 8}" y="${y(v) + 4}" text-anchor="end" ${mono}>${money(v)}</text>`;
@@ -175,7 +175,7 @@
   /* ---------- Boot ---------- */
   function notice() {
     const d = META.as_of ? new Date(META.as_of + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }) : "";
-    if (d && $("#asof")) $("#asof").textContent = "Revised " + d;
+    if (META.as_of && $("#asof")) $("#asof").textContent = new Date(META.as_of + "T12:00:00").toLocaleDateString("en-US", { month: "short", year: "numeric" }).replace(" ", ". ").toUpperCase();
     $("#notice").innerHTML = META.sample
       ? `<b>Preview:</b> prices shown are sample data, not live market prices.`
       : `Prices from completed sales and retailer listings. Updated ${d}.`;
