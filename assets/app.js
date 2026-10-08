@@ -297,7 +297,7 @@
     set("#stSales", GUNS.reduce((s, g) => s + (g.sales_90d || 0), 0));
     set("#stCals", AMMO.length);
     const late = root.classList.contains("late");
-    entered.then(() => $$("#stats [data-count]").forEach((e, k) => countUp(e, (late ? 2700 : 1400) + k * 140)));
+    entered.then(() => $$("#stats [data-count]").forEach((e, k) => countUp(e, (late ? 3200 : 1400) + k * 110)));
   }
   function wireTiles() {
     $("#searchform").onsubmit = (e) => { e.preventDefault(); goGuns(); };
@@ -376,11 +376,16 @@
 
     const photo = $("#photo"), hero = $(".hero");
     if (anim && photo && hero && matchMedia("(pointer: fine)").matches) {
+      let pm = null;
       hero.addEventListener("pointermove", (e) => {
-        const r = hero.getBoundingClientRect();
-        const dx = (e.clientX - r.left) / r.width - 0.5, dy = (e.clientY - r.top) / r.height - 0.5;
-        photo.style.setProperty("--rx", (dx * 14).toFixed(2) + "deg");
-        photo.style.setProperty("--ry", (-dy * 10).toFixed(2) + "deg");
+        if (pm) return;
+        pm = requestAnimationFrame(() => {
+          pm = null;
+          const r = hero.getBoundingClientRect();
+          const dx = (e.clientX - r.left) / r.width - 0.5, dy = (e.clientY - r.top) / r.height - 0.5;
+          photo.style.setProperty("--rx", (dx * 14).toFixed(2) + "deg");
+          photo.style.setProperty("--ry", (-dy * 10).toFixed(2) + "deg");
+        });
       });
       hero.addEventListener("pointerleave", () => { photo.style.setProperty("--rx", "0deg"); photo.style.setProperty("--ry", "0deg"); });
     }
